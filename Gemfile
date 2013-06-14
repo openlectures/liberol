@@ -13,10 +13,15 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'rspec-nc'
   gem 'guard-rspec'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 gem 'ember-rails'
