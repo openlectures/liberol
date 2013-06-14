@@ -4,4 +4,7 @@ FactoryGirl.define do
   factory :subject do
     subject "Economics"
   end
+  factory :failed_subject, class: Subject do
+    subject nil
+  end
 end

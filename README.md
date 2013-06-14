@@ -1,29 +1,29 @@
 Liberol
 ========
+##What?##
+The new openlectures repo built on the latest cutting-edge libraries:
+1. Ember.js
+2. Ruby on Rails 4.0.0-rc2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Ruby version##
+It is currently 2.0.0-p195, check .ruby-version;
 
-Things you may want to cover:
+##Gemset Name##
+This gemset is called `liberol`. Create this gemset by running:
+    rvm gemset create liberol
 
-* Ruby version
+##System dependencies##
+The database used in this case is Postgresql. Please have it set up using `homebrew` or `Postgres.app`
+    brew install postgresql
 
-* System dependencies
+##Database creation##
+    rake db:create
+    rake db:migrate
+    rake db:test:prepare
 
-* Configuration
+##Testing##
+There is a suite of rspec tests you can run:
 
-* Database creation
+Just run `rspec` in the home directory and watch all the tests(hopefully) pass.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+If you're doing any development, please do write tests first, and run Guard by typing `guard`. This will allow continuous testing to get through the red-green-refactor cycle.
